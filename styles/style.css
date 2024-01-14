@@ -148,6 +148,9 @@ main h2 {
     align-content: center;
 }
 
+iframe {
+    width: 100%;
+}
 
 /*Section*/
 
