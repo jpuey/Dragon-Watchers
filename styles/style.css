@@ -1,0 +1,130 @@
+/*Reset*/
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0  ;
+}
+
+
+.cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Header*/
+.header {
+    height: auto;
+    width: auto;
+    margin: 0;
+    background-image: url("../assets/dragon-azul.jpg");
+    background-size: cover;
+    }
+
+.logo {
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+    }
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+}
+
+.header nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: white;
+    text-decoration: antiquewhite;
+    
+}
+
+header nav ul li {
+    color: white;
+}
+
+
+
+
+/*Main*/
+
+.index-main{
+    background-color:#696D7D;
+    height: auto;
+    width: auto;
+    margin: 0;
+
+
+}
+
+main h2 {
+    color: white;
+    font-size: 700;
+}
+
+/*Index Main*/
+
+.div-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-1 {
+    height: 1000px;
+    width: auto;
+}
+
+.text {
+    max-height: 1000px;
+    line-height: 200%;
+}
+
+.list {
+    line-height: 200%;
+    
+}
+
+
+
+/*Section*/
+
+section {
+    background-color:#696D7D;
+}
+
+
+
+/*Side*/
+
+
+
+/*Footer*/
+.footer {
+    height: 200px;
+    background-image: url("../assets/dragon-banner-blue.jpg");
+    background-position-y: 30%;
+    background-size: cover;
+}
+
+.logo-1 {
+    height: 200px;
+
+}
+
+.social {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+
+}
+
+.social a {
+    word-spacing: double;
+}
