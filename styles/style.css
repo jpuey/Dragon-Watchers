@@ -43,11 +43,18 @@
     align-items: center;
     color: white;
     text-decoration: antiquewhite;
+    width: 100%;
     
 }
 
 header nav ul li {
     color: white;
+}
+
+.navbar {
+    background-color: rgba(157,199,218,255);
+    position: fixed;
+    top: 0;
 }
 
 
