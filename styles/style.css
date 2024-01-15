@@ -64,6 +64,12 @@
     
 }
 
+.title-nav  {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 header nav ul li {
     color: white;
 }
@@ -95,6 +101,9 @@ header nav ul li {
     grid-row: 1/2;
 }
 
+.formulario {
+    display: block;
+}
 /*Todo menos header*/
 
 
@@ -133,6 +142,7 @@ main h2 {
 .text {
     max-height: 1000px;
     line-height: 200%;
+    font-size: 24px;    
 }
 
 .list {
@@ -150,6 +160,7 @@ main h2 {
 
 iframe {
     width: 100%;
+    
 }
 
 h2 {

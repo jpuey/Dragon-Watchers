@@ -18,7 +18,7 @@
     <!--Encabezado-->
     <header class="header">
         <!--Logo de la pagina-->
-            <div class="div-logo">
+            <div class="div-logo ">
                 <img src="./assets/dragon-watchers.png" alt="logo Dragon" class="logo">
             </div>
             <!--Titulo de la pagina-->
@@ -65,22 +65,6 @@
     <!--Cuerpo Principal-->
     <main class="index-main">
     <!--Indice-->
-        <nav>
-            <!--Links Internos-->
-            <!--
-            <ul class="list">
-                <li>
-                    <a href="#Somos">¿Quienes somos?</a> <br>
-                    <a href="#Hacemos">¿Que hacemos?</a> <br>
-                    <a href="#Miembros">¿Quienes son nuestros miembros?</a> <br>
-                    <a href="#Impacto">Nuestro impacto en la Vida de nuestros miembros</a> <br>
-                    <a href="#Resumen">En resumen</a> <br>
-                    <a href="#Vos">Sobre Vos</a>
-                </li>
-            </ul>
-        </nav>
-    -->
-
         <div class="list-group">
             <a href="#Somos" class="list-group-item list-group-item-action">¿Quienes Somos?</a>
             <a href="#Hacemos" class="list-group-item list-group-item-action">¿Que Hacemos?</a>
@@ -94,7 +78,7 @@
         <h3 id="Somos">¿Quienes Somos</h3>
         <p class="text">En un mundo donde los dragones son solo criaturas míticas, un grupo de personas se reúnen para compartir su amor por estas criaturas legendarias. Dragon Watchers es un grupo internacional de entusiastas de los dragones que se reúnen en línea y en persona para discutir su pasión por los dragones.</p>
         <h3 id="Hacemos">¿Que Hacemos?</h3>
-        <p class="textarea">El club ofrece una variedad de actividades y recursos para sus miembros. Los miembros pueden participar en foros de discusión, compartir fotos y videos de dragones, y aprender sobre la historia y la cultura de los dragones. El club también organiza eventos en persona, como convenciones y reuniones, donde los miembros pueden conocerse y compartir su amor por los dragones.</p>
+        <p class="text">El club ofrece una variedad de actividades y recursos para sus miembros. Los miembros pueden participar en foros de discusión, compartir fotos y videos de dragones, y aprender sobre la historia y la cultura de los dragones. El club también organiza eventos en persona, como convenciones y reuniones, donde los miembros pueden conocerse y compartir su amor por los dragones.</p>
         <h3 id="Miembros">¿Quienes son nuestros miembros?</h3>
         <p class="text">Los miembros del club son personas de todas las edades y orígenes. Hay miembros que se han enamorado de los dragones desde que eran niños, y hay miembros que se han interesado en los dragones más tarde en la vida. Los miembros del club provienen de todo el mundo, y comparten una pasión común por los dragones.</p>
         <h3 id="Impacto">Nuestro impacto en la vida de nuestros miembros</h3> 
@@ -108,10 +92,15 @@
     <!--Formulario-->
         <h2 id="Vos">¿AHORA NOS CONTAS SOBRE VOS?</h2>
         <form action="form.php" method="post" class="formulario">
-            <label for="Tu Nombre">Agregar tu nombre</label>
+            <div class="mb-3">
+            <label for="Tu Nombre" class="form-label">Agregar tu nombre</label>
             <input type="text" name="Tu Nombre" id="Tu Nombre" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
             <label for="Tu Apellido">Agregar tu Apellido</label>
             <input type="text" name="Tu Apellido" id="Tu Apellido" placeholder="Tu Apellido">
+            </div>
+            <div class="mb-3">
             <label for="Tu Ubicacion">Tu Ubicacion</label>
             <select name="Tu Ubicacion" id="Tu Ubicacion">Tu Ubicacion
                 <option value="">Argentina</option>
@@ -121,9 +110,25 @@
                 <option value="">Chile</option>
                 <option value="">Tierra Media</option>
             </select>
+            </div>
+            <div class="mb-3">
             <label for="Comentarios">Comentarios</label>
-            <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Tus Comentarios"></textarea>
-            <input type="submit" value="Enviar">
+            </div>
+            <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Tus Comentarios"  class="w-100"></textarea>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 
     </section>
