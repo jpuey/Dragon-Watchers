@@ -1,31 +1,34 @@
-.index-main{
+.index{
+    &-main{
     grid-area: main;
-    background-color:#696D7D;
+    background-color: $color-principal;
     height: auto;
     width: auto;
     margin: 0;
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
-
-
+}
+    &-nos {
+    background-color: $color-principal;
+}
 }
 
-
-.index-nos {
-    background-color:#696D7D;
-}
 
 main h2 {
-    color: white;
+    color: $color-tipografia;
     font-size: 700;
 }
 
-.div-section{
+.div{
+    &-section{
     display: flex;
     justify-content: space-between;
+    }
+    &-h2 {
+        padding-right: 0;
+    }
 }
-
 .image-1 {
     height: 1000px;
     width: auto;
@@ -39,13 +42,11 @@ main h2 {
 
 .list {
     line-height: 200%;
+    &-group {
+        padding-right: 0;
+    }
     
 }
-
-.list-group {
-    padding-right: 0;
-}
-
 
 .texto {
     display: flex;
@@ -62,17 +63,14 @@ iframe {
 }
 
 h2 {
-    color: white;
+    color: $color-tipografia;
 }
 
-.div-h2 {
-    padding-right: 0;
-}
 
 h3 { 
-    color: white;
+    color: $color-tipografia;
 }
 
 a {
-    color: white;
+    color: $color-tipografia;
 }

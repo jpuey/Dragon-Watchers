@@ -1,3 +1,23 @@
+.scale-xxl {
+  font-size: 40px;
+}
+
+.scale-xl {
+  font-size: 30px;
+}
+
+.scale-l {
+  font-size: 20px;
+}
+
+.scale-md {
+  font-size: 10px;
+}
+
+.scale-sm {
+  font-size: 5px;
+}
+
 * {
   font-family: "Quicksand", sans-serif;
   margin: 0;
@@ -11,7 +31,7 @@
   grid-template-areas: "header header header header header header" "main main main main main main" "main main main main main main" "section section section section section section" "footer footer footer footer footer footer";
 }
 
-.header {
+header {
   grid-area: header;
   height: auto;
   width: 100%;
@@ -22,31 +42,7 @@
   background-position-y: 35%;
   display: inline-block;
 }
-
-.header-responsive {
-  display: flex;
-  height: auto;
-  margin: 54 px 0 0 0;
-  min-height: 180px;
-  margin-top: 54px;
-  background-image: url("../assets/dragon-azul.jpg");
-  background-size: cover;
-  background-position-y: 35%;
-}
-
-.div-title {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  text-align: center;
-  font-size: xx-large;
-  font-weight: 700;
-  color: white;
-}
-
-.header nav {
+header nav {
   display: flex;
   justify-content: right;
   align-items: center;
@@ -54,14 +50,35 @@
   text-decoration: antiquewhite;
   width: 100%;
 }
+header nav ul li {
+  color: white;
+}
 
+.encabezado-responsive {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 180px;
+  margin-top: 54px;
+  background-image: url("../assets/dragon-azul.jpg");
+  background-size: cover;
+  background-position-y: 35%;
+}
+
+.title-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+}
+.title-h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+  color: white;
+}
 .title-nav {
   display: flex;
   flex-direction: column;
-}
-
-header nav ul li {
-  color: white;
 }
 
 .navbar {
@@ -79,7 +96,6 @@ header nav ul li {
   color: white;
   border-color: white;
 }
-
 .btn:hover {
   color: black;
   background-color: white;
@@ -100,7 +116,6 @@ header nav ul li {
   flex-direction: column;
   padding-bottom: 50px;
 }
-
 .index-nos {
   background-color: #696D7D;
 }
@@ -113,6 +128,9 @@ main h2 {
 .div-section {
   display: flex;
   justify-content: space-between;
+}
+.div-h2 {
+  padding-right: 0;
 }
 
 .image-1 {
@@ -129,7 +147,6 @@ main h2 {
 .list {
   line-height: 200%;
 }
-
 .list-group {
   padding-right: 0;
 }
@@ -149,10 +166,6 @@ iframe {
 
 h2 {
   color: white;
-}
-
-.div-h2 {
-  padding-right: 0;
 }
 
 h3 {
@@ -214,7 +227,6 @@ footer {
   justify-self: center;
   width: 100%;
 }
-
 .social-responsive {
   display: flex;
   flex-wrap: wrap;
@@ -222,12 +234,10 @@ footer {
   align-content: center;
   justify-self: center;
 }
-
-.nav-socials {
+.social-nav {
   justify-self: center;
   align-self: center;
 }
-
 .social a {
   word-spacing: double;
 }

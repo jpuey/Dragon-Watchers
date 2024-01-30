@@ -32,23 +32,18 @@ footer {
     align-content: center;
     justify-self: center;
     width: 100%;
-
+        &-responsive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        justify-self: center;
+    }
+        &-nav {
+            justify-self: center;
+            align-self: center;
+        }
+        & a {
+            word-spacing: double;
 }
-
-.social-responsive {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    justify-self: center;
-
-}
-
-.nav-socials {
-    justify-self: center;
-    align-self: center;
-}
-
-.social a {
-    word-spacing: double;
 }

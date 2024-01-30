@@ -5,7 +5,6 @@ $color-navbar: rgba(157,199,218,255);
 $color-hover: black;
 
 
-//Tipografias
 
 //Tamaño tipografias
 $f-lg: 2rem;
@@ -24,5 +23,16 @@ $colors: (
 );
 
 $sizes: (
-    
-)
+    xxl: 40px,
+    xl: 30px,
+    l: 20px,
+    md:10px,
+    sm:5px,
+
+);
+
+@each $talles, $pixels in $sizes {
+    .scale-#{$talles}{
+        font-size: $pixels;
+    }
+}
