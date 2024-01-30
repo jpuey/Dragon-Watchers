@@ -12,10 +12,9 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
     grid-template-areas: 
     "header header header header header header"
-    "main main main main main main"
     "main main main main main main"
     "main main main main main main"
     "section section section section section section"
@@ -39,7 +38,7 @@
     .header-responsive {
         display: flex;
         height: auto;
-        margin: 54 px   0(repeat 3); 
+        margin: 54 px 0 0 0; 
         min-height: 180px;
         margin-top: 54px;
         background-image: url("../assets/dragon-azul.jpg");
@@ -106,19 +105,6 @@ header nav ul li {
 }
 
 
-
-.formulario {
-    display: block;
-    padding-right: 0;
-}
-
-.div-formulario {
-    padding-right: 0;
-    padding-bottom: 50px;
-}
-
-
-
 .logo-asian {
     width: 30px;
     height: 30px;
@@ -149,15 +135,13 @@ main h2 {
     font-size: 700;
 }
 
-/*Index Main*/
-
 .div-section{
     display: flex;
     justify-content: space-between;
 }
 
 .image-1 {
-    height: 1000px;
+    height: auto;
     width: auto;
 }
 
@@ -217,18 +201,18 @@ section {
     display: flex;
 }
 
-
-
-/*Side*/
-
-.nos-spot {
-    padding-right: 0%;
+.formulario {
+    display: block;
+    padding-right: 0;
 }
 
-
+.div-formulario {
+    padding-right: 0;
+    padding-bottom: 50px;
+}
 
 /*Footer*/
-.footer {
+footer {
     grid-area: footer;
     height: 100%;
     margin-top: 0;
@@ -274,7 +258,7 @@ section {
 
 }
 
-.nav-social {
+.social-nav {
     justify-self: center;
     align-self: center;
 }
@@ -285,17 +269,43 @@ section {
 
 /*Media Queries*/
 
-/*Tablet*/
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) {
     .grid-container{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
         grid-template-areas: 
-        "header header header"
-        "main main main"
-        "main main main"
-        "main main main"
-        "section section section"
-        "footer footer footer"
+        "header header header header header header"
+        "main main main main main main"
+        "main main main main main main"
+        "section section section section section section"
+        "footer footer footer footer footer footer"
+    }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "section section section section"
+        "footer footer footer footer"
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "main main"
+        "section section"
+        "footer footer"
     }
 }

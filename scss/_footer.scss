@@ -1,0 +1,54 @@
+footer {
+    grid-area: footer;
+    height: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    background-image: url("../assets/dragon-banner-blue.jpg");
+    background-position-y: 30%;
+    background-size: cover;
+    display: flex;
+}
+
+.footer-responsive {
+    height: 100%;
+    margin-top: 0;
+    background-image: url("../assets/dragon-banner-blue.jpg");
+    background-position-y: 30%;
+    background-size: cover;
+    display: flex;
+}
+
+
+
+.logo-1 {
+    max-height: 235px;
+
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    width: 100%;
+
+}
+
+.social-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+
+}
+
+.nav-socials {
+    justify-self: center;
+    align-self: center;
+}
+
+.social a {
+    word-spacing: double;
+}

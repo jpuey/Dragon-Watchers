@@ -1,0 +1,14 @@
+
+//reset
+@import "./reset/vars";
+@import "./reset/mixin";
+@import "./reset/reset";
+//Body
+@import "grid";
+@import "header";
+@import "principal";
+@import "section";
+@import "footer";
+
+//Media Queries
+@import "mediaq"

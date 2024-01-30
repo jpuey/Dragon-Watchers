@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "main main main main main main"
+    "section section section section section section"
+    "footer footer footer footer footer footer"
+        ;
+}

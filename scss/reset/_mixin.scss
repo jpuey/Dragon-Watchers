@@ -1,0 +1,10 @@
+@mixin sizes($pad,$marg) {
+    padding: $pad;
+    margin: $marg;
+}
+
+@mixin titles {
+    font-size: $f-lg;
+    color: $color-tipografia;
+
+}
